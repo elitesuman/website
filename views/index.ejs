@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+  <head>
+    <title><%= title %></title>
+    <% include include/head.ejs %>
+  </head>
+
+  <body>
+
+    <div class="home-wrap">
+
+            <% include include/header.ejs %>
+
+        <div class="home-sections">
+            <% include include/body.ejs %>
+
+        </div>
+    </div>
+
+    <div class="modal fade" id="warningModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="myModalLabel"><strong>BEHOLD</strong></h4>
+                </div>
+                <div class="modal-body">
+                    <strong>YOU ARE ENTERING INTO SUMAN'S PRIVATE PROPERTY. . . JUST KIDDING LOL.</strong>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">welcome</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal for about me  -->
+    <div class="modal fade" id="aboutme" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="myModalLabel"><span style="margin-left: 45%" class="about_me"><img src="../images/aboutme.jpg" style="width: 100px; height: 100px" class="img-circle"></span></h4>
+                </div>
+                <div class="modal-body">
+                    <strong>Hello there..I'm Suman and i'm an engineer! yes you read it right.. m an engineer unfortunetly.. like to do
+                        stuffs like creating web application and designing.. and i'm a music lover. love dancing, playing guitar and
+                        sometimes i like to sing(under shower) :D</strong>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  modal for page -->
+    <div class="modal fade" id="aboutpage" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <strong>My personal website containing some information about my work and what i do..
+                        Nothing much..till now. . more to come</strong>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+  </body>
+
+</html>
