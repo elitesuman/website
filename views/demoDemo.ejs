@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+</head>
+<body>
+<p> your email is verified</p>
+</body>
+<script>
+    $.ajax({
+        url: "https://geoip-db.com/jsonp",
+        jsonpCallback: "callback",
+        dataType: "jsonp",
+        success: function( location ) {
+            console.log(location);
+        }
+    });
+    $.get("http://ipinfo.io", function(response) {
+        console.log(response);
+    }, "jsonp");
+
+    $.get("https://ifsc.razorpay.com/KARB0000001", function(response) {
+        console.log(response);
+    }, "json");
+
+
+</script>
+</html>
